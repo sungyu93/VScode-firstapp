@@ -3,19 +3,17 @@ package site.metacoding.firstapp.util;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
 public class MyParseTest {
-
     @Test
-    public void changeStringToInt_Test() {
-        // given
+    public void changeStringToInt_test() {
+        // given (매개변수)
         String value = "1";
 
-        // when
+        // when (test)
         int result = Integer.parseInt(value);
 
-        // then
+        // then (verify)
         assertEquals(1, result);
     }
 }
